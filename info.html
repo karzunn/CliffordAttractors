@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" type="text/css" href="infoStyles.css">
+</head>
+
+<body>
+
+<a id="backArrow" href="index.html">&#8592;</a>
+
+<div id="main">
+
+    <div id="imgContainer">
+        <img src="SeaShell.jpg">
+    </div>
+
+    <div id="explanation">
+        <h1>CLIFFORD ATTRACTORS</h1>
+        <p>
+        Imagine you are at a water park, and there is a very long and twisting waterslide. This is an unusual waterslide that starts where it ends, and you simply enter it from the side to ride the loop. The waterslide is a half pipe, whose walls extend up and out a huge distance. You can start the waterslide from just about anywhere inside its walls, slide down and eventually enter the loop.
+        </p>
+        <p>
+        This is essentially the same concept as a Clifford Attractor, and attractors in general. No matter where you start, you eventually fall into the loop and follow a set path. In this analogy, the waterslide is actually a few mathematical equations working together. The equations that create Clifford Attractors look like this:
+        </p>
+        <p class="centerP"><b>
+        X<sub>n+1</sub> = sin(A&#8901;Y<sub>n</sub>) + C&#8901;cos(A&#8901;X<sub>n</sub>)</b>
+        </p>
+        <p class="centerP"><b>
+        Y<sub>n+1</sub> = sin(B&#8901;X<sub>n</sub>) + D&#8901;cos(B&#8901;Y<sub>n</sub>)</b>
+        </p>
+        <p>
+        To plot a Clifford Attractor, you start by picking a value of x and y. Simply solve the equations, and the resulting x and y values get fed back into the same equations again. This is done thousands of times, and by the end of it, you have thousands of x and y values. If you plot all of these values as pixel values on a canvas, you will see your Clifford Attractor. 
+        The values A, B, C and D are just constants. You can choose them to be whatever you want, and they essentially change the shape and path of the "waterslide".    
+        </p>
+    </div>
+
+</div>
+
+</body>
+
+</html>

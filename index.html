@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script defer src="main.js"></script>
+</head>
+
+<a id="info" href="info.html">&#9432</a>
+
+<a id="save" download="YourFileName.jpg">&#10515</a>
+
+<body>
+
+    <div id="image">
+
+    </div>
+
+    <div id="menu">
+
+        <div id="navbar">
+            <div class="optionButton" id="Calc">Constants</div>
+            <div class="optionButton" id="Disp">Display</div>
+            <div class="optionButton" id="Rend">Render</div>
+        </div>
+
+        <div id="controls">
+
+        <div class="rendControl">
+        <label class="label" for="res">Resolution:</label>
+        <input type="range" step="10" min="100" max="1000" value="250" class="slider" id="res" name="res" oninput="this.nextElementSibling.innerHTML = this.value.toString()">
+        <label class="value" for="res">250</label>
+        </div>
+
+        <div class="rendControl">
+        <label class="label" for="iterations">Iterations:</label>
+        <input type="range" step="10" min="100" max="100000" value="10000" class="slider" id="iterations" name="iterations" oninput="this.nextElementSibling.innerHTML = this.value.toString()">
+        <label class="value" for="iterations">10000</label>
+        </div>
+
+        <div class="rendControl">
+            <label class="label" for="workers">Workers:</label>
+            <input type="range" step="1" min="1" max="20" value="5" class="slider" id="workers" name="workers" oninput="this.nextElementSibling.innerHTML = this.value.toString()">
+            <label class="value" for="workers">5</label>
+        </div>
+
+        <div class="dispControl">
+            <label class="label" for="dLight">Shadows:</label>
+            <input type="range" step="1" min="0" max="100" value="50" class="slider" id="dLight" name="dLight" oninput="this.nextElementSibling.innerHTML = this.value.toString()">
+            <label class="value" for="dLight">50</label>
+        </div>
+
+        <div class="dispControl">
+            <label class="label" for="dHue">S Hue:</label>
+            <input type="range" step="1" min="0" max="360" value="0" class="slider" id="dHue" name="dHue" oninput="this.nextElementSibling.innerHTML = this.value.toString()">
+            <label class="value" for="dHue">0</label>
+        </div>
+
+        <div class="dispControl">
+            <label class="label" for="dSat">S Sat:</label>
+            <input type="range" step="1" min="0" max="100" value="0" class="slider" id="dSat" name="dSat" oninput="this.nextElementSibling.innerHTML = this.value.toString()">
+            <label class="value" for="dSat">0</label>
+        </div>
+
+        <div class="dispControl">
+            <label class="label" for="hLight">Hightlights:</label>
+            <input type="range" step="1" min="0" max="100" value="25" class="slider" id="hLight" name="dLight" oninput="this.nextElementSibling.innerHTML = this.value.toString()">
+            <label class="value" for="dLight">25</label>
+        </div>
+
+        <div class="dispControl">
+            <label class="label" for="hHue">H Hue:</label>
+            <input type="range" step="1" min="0" max="360" value="0" class="slider" id="hHue" name="hHue" oninput="this.nextElementSibling.innerHTML = this.value.toString()">
+            <label class="value" for="hHue">0</label>
+        </div>
+
+        <div class="dispControl">
+            <label class="label" for="hSat">H Sat:</label>
+            <input type="range" step="1" min="0" max="100" value="0" class="slider" id="hSat" name="hSat" oninput="this.nextElementSibling.innerHTML = this.value.toString()">
+            <label class="value" for="hSat">0</label>
+        </div>
+
+        <div class="calcControl">
+        <label class="label" for="A">Alpha:</label>
+        <input type="range" step="0.01" min="-5" max="5" value="1.7" class="slider" id="A" name="A" oninput="this.nextElementSibling.innerHTML = this.value.toString()">
+        <label class="value" for="A">1.7</label>
+        </div>
+
+        <div class="calcControl">
+        <label class="label" for="B">Beta:</label>
+        <input type="range" step="0.01" min="-5" max="5" value="1.7" class="slider" id="B" name="B" oninput="this.nextElementSibling.innerHTML = this.value.toString()">
+        <label class="value" for="B">1.7</label>
+        </div>
+
+        <div class="calcControl">
+        <label class="label" for="C">Gamma:</label>
+        <input type="range" step="0.01" min="-5" max="5" value="0.6" class="slider" id="C" name="C" oninput="this.nextElementSibling.innerHTML = this.value.toString()">
+        <label class="value" for="C">0.6</label>
+        </div>
+
+        <div class="calcControl">
+        <label class="label" for="D">Delta:</label>
+        <input type="range" step="0.01" min="-5" max="5" value="1.2" class="slider" id="D" name="D" oninput="this.nextElementSibling.innerHTML = this.value.toString()">
+        <label class="value" for="D">1.2</label>
+        </div>
+
+        </div>
+
+    </div>  
+
+</body>
+
+</html>

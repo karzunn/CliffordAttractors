@@ -1,0 +1,304 @@
+@media (min-aspect-ratio: 3/2) 
+{
+
+#menu{
+    background-color:rgb(25, 25, 25);
+    width: 39%;
+    z-index: 10;
+    margin: 0% 1% 1.5% 0;
+}
+
+#navbar{
+    width: 100%;
+    background: thistle;
+    display: flex;
+    height: auto;
+}
+
+.optionButton{
+    text-align: center;
+    font-family:monospace;
+    padding: 3% 0 3% 0;
+    font-size: 4vh;
+    color: white;
+    background-color: rgb(50, 50, 50);
+    width:33%;
+}
+
+#info{
+    text-decoration:none;
+    text-align: center;
+    padding: 1% 0% 0% 1.5%;
+    position:absolute;
+    top:0;
+    left:0;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 26px;
+}
+#info:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#save{
+    text-align: center;
+    padding: 1% 1.5% 1% 1.5%;
+    position:absolute;
+    top:90vh;
+    left:0;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 36px;
+}
+#save:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#image{
+    height: 100%;
+    width: 60%;
+}
+
+#myCanvas {
+    height: 100vh;
+    border: 2px white;
+}
+
+#controls{
+    height:90%;
+    background-color:rgb(25, 25, 25);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 10;
+    margin: 0% 1% 1.5% 0;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.label{
+    font-size: 22px;
+      color: white;
+      width: 20%;
+      display: inline-block;
+      margin: 0 0 0 4%;
+  }
+
+.value{
+    font-size: 24px;
+    color: white;
+    width: 5%;
+    display: inline-block;
+}
+
+.calcControl{
+    text-align: left;
+    width:100%;
+}
+
+.dispControl{
+    text-align: left;
+    width:100%;
+}
+
+.rendControl{
+    text-align: left;
+    width:100%;
+}
+  
+.slider {
+    margin: 4% 4% 4% 4%;
+    -webkit-appearance: none;
+    width: 50%;
+    height: 1vh;
+    background: rgb(25, 25, 25);
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+  }
+  
+  
+  /* for chrome/safari */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3vh;
+    height: 10vh;
+    background: rgb(25, 25, 25);
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 4px;
+}
+  
+  /* for firefox */
+.slider::-moz-range-thumb {
+    width: 3vh;
+    height: 10vh;
+    background: #000;
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+}
+
+@media (max-aspect-ratio: 3/2) 
+
+{
+
+    #menu{
+        background-color:rgb(25, 25, 25);
+        width: 100%;
+        z-index: 10;
+        margin: 0% 1% 1.5% 0;
+        height: 100%;
+    }
+    
+    #navbar{
+        width: 100%;
+        background: thistle;
+        display: flex;
+        height: auto;
+    }
+    
+    .optionButton{
+        text-align: center;
+        font-family:monospace;
+        padding: 3% 0 3% 0;
+        font-size: 4vw;
+        color: white;
+        background-color: rgb(50, 50, 50);
+        width:33%;
+    }
+
+    #info{
+        text-decoration:none;
+        text-align: center;
+        padding: 1% 0% 0% 1.5%;
+        position:absolute;
+        top:0;
+        left:0;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 42px;
+    }
+    #info:hover{
+        color: white;
+        cursor: pointer;
+    }
+    
+    #save{
+        text-align: center;
+        padding: 1% 2% 1% 1.5%;
+        position:absolute;
+        top:0;
+        right:0px;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 60px;
+    }
+    #save:hover{
+        color: white;
+        cursor: pointer;
+    }
+
+    .dispControl{
+        text-align: center;
+        width:100%;
+    }
+
+    .calcControl{
+        text-align: center;
+        width:100%;
+    }
+
+    .rendControl{
+        text-align: center;
+        width:100%;
+    }
+
+    .label{
+        font-size: 4vw;
+        color: white;
+        width: 20%;
+        display: inline-block;
+    }
+
+    .value{
+        font-size: 4vw;
+        color: white;
+        width: 10%;
+        display: inline-block;
+    }
+
+    #image{
+        width: 100%;
+    }
+
+    #myCanvas {
+        height: 85vw;
+        width: 85vw;
+        border: 2px white;
+    }
+
+    #controls{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        z-index: 10;
+        margin: 0% 1% 1.5% 0;
+    }
+
+    body {
+        text-align: center;
+        display: inline;
+        width:100%;
+        height:100%;
+        background: #000;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+
+        /* for chrome/safari */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 4vw;
+    height: 7.5vw;
+    background: #000;
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 4px;
+}
+  
+  /* for firefox */
+.slider::-moz-range-thumb {
+    width: 4vw;
+    height: 7.5vw;
+    background: #000;
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.slider {
+    margin: 3.25% 3.25% 3.25% 3.25%;
+    -webkit-appearance: none;
+    width: 50%;
+    height: 1vh;
+    background: #000;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+  }
+
+}
